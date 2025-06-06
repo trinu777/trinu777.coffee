@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Ahorcado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="coffee-bg"></div>
+    <div class="game-container">
+        <h1>☕ Café Ahorcado ☕</h1>
+        <div class="game-content">
+            <div id="hangman-drawing">
+                <canvas id="canvas" width="200" height="250"></canvas>
+            </div>
+            <div id="word-container"></div>
+            <div id="message"></div>
+            <div class="keyboard">
+                <div class="keyboard-row">
+                    <button class="letter">Q</button><button class="letter">W</button><button class="letter">E</button>
+                    <button class="letter">R</button><button class="letter">T</button><button class="letter">Y</button>
+                    <button class="letter">U</button><button class="letter">I</button><button class="letter">O</button>
+                    <button class="letter">P</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="letter">A</button><button class="letter">S</button><button class="letter">D</button>
+                    <button class="letter">F</button><button class="letter">G</button><button class="letter">H</button>
+                    <button class="letter">J</button><button class="letter">K</button><button class="letter">L</button>
+                    <button class="letter">Ñ</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="letter">Z</button><button class="letter">X</button><button class="letter">C</button>
+                    <button class="letter">V</button><button class="letter">B</button><button class="letter">N</button>
+                    <button class="letter">M</button>
+                </div>
+            </div>
+            <button id="new-game">Nueva Palabra ☕</button>
+        </div>
+        <div class="coffee-steam">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
